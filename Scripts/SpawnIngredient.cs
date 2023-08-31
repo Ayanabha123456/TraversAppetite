@@ -238,7 +238,7 @@ public class SpawnIngredient : MonoBehaviour
 
             //modifying the ingredient (X,Y) based on count
             ingCount++;
-            if (ingCount == ingIndices.Count / 2)
+            if (ingCount == ingIndices.Count / 2) //when 5 ingredients are placed, move on to next row
             {
                 ingX = 100f;
                 ingY = 350f;
@@ -251,8 +251,9 @@ public class SpawnIngredient : MonoBehaviour
         }
         else if(questType == "BFS" || questType == "DFS") //for BFS and DFS, spawn the ingredients around the circumference of a circle with Centre and radius
         {
-            float angleStep = 360f / numOfIngredients;
-            float angle = ingCount * angleStep;
+            float angleStep = 360f / numOfIngredients; //dividing the circle for 10 ingredients
+            float angle = ingCount * angleStep; //angle with respect to circle centre for each ingredient
+            //getting (x,y) coordinate for ingredient in circumference
             float x = radius * Mathf.Cos(angle * Mathf.Deg2Rad);
             float y = radius * Mathf.Sin(angle * Mathf.Deg2Rad);
 
@@ -283,7 +284,7 @@ public class SpawnIngredient : MonoBehaviour
             if (questType != "FIFO" && spawnedSprite.name == source_node) //for graph-based algorithm highlight the slot of the source ingredient
                 imgSlotComp.color = Color.yellow;
 
-            //create a game-object corresponding to the sprite, set its parent as the Canvas and generate it on a random position of the screen
+            //create a game-object corresponding to the sprite, set its parent as the ingredient slot and generate it inside the ingredient slot
             Vector2 randomPositionIng = GetSpawnPosition();
             GameObject ing = new GameObject(spawnedSprite.name);
             ing.transform.position = randomPositionIng;
@@ -495,7 +496,7 @@ public class SpawnIngredient : MonoBehaviour
     }
     private IEnumerator ShowPrompt()
     {
-        // Wait for the specified display time
+        // Wait for 5 seconds
         yield return new WaitForSeconds(5f);
 
         promptGO.SetActive(false);

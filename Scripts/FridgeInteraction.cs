@@ -40,7 +40,7 @@ public class FridgeInteraction : MonoBehaviour
     }
     private IEnumerator ShowPrompt()
     {
-        // Wait for the specified display time
+        // Wait for 5 seconds
         yield return new WaitForSeconds(5f);
 
         promptGO.SetActive(false);
