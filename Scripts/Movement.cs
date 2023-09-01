@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-/* a class that is used to move the player character in the kitchen (StartScene)*/
+/* a class that is used to move the player character in the kitchen (StartScene) - it is attached to the player character */
 //The code has been referred from this : https://github.com/Brackeys/2D-Character-Controller
 public class Movement : MonoBehaviour
 {

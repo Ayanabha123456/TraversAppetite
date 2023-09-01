@@ -5,7 +5,7 @@ using UnityEngine.UI;
 using UnityEngine.EventSystems;
 using TMPro;
 
-/* class to drop ingredients in the pan once the queue is full*/
+/* class to drop ingredients in the pan once the queue is full - it is attached to the 'Pan' in the CookingScene */
 public class DropInPan : MonoBehaviour, IDropHandler
 {
     private GameObject canvasGO;

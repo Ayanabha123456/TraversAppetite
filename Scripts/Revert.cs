@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-/* a class to revert to the previous game state if the player drops a wrong ingredient in the queue/stack */
+/* a class to revert to the previous game state using the 'Revert' button if the player drops a wrong ingredient in the queue/stack */
 public class Revert : MonoBehaviour
 {
     private GameObject canvasGO;

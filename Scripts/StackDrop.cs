@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using TMPro;
 
-/* class to drop ingredients in the stack cells for LIFO */
+/* class to drop ingredients in the stack cells for LIFO - it is attached to the stack cells in the FridgeScene */
 public class StackDrop : MonoBehaviour, IDropHandler
 {
     private GameObject droppedIngredient; //the dropped ingredient

@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-/* a class to submit the selected option in the MCQ */
+/* a class to submit the selected option in the MCQ - it is attached to the 'Submit' button in the MCQScene */
 public class SubmitAnswer : MonoBehaviour
 {
     private Button submitButton;

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-/* class to close/disable the Note UI */
+/* class to close/disable the Note UI - it is attached to the 'Note' UI */
 public class CloseNote : MonoBehaviour
 {
     private Button closeButton;

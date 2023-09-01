@@ -5,7 +5,7 @@ using UnityEngine.EventSystems;
 using UnityEngine.UI;
 using TMPro;
 
-/* class to drop ingredients in the stack cells for DFS algorithm*/
+/* class to drop ingredients in the stack cells for DFS algorithm - it is attached to the stack cells in the CookingScene */
 public class DFSDrop : MonoBehaviour, IDropHandler
 {
     public GameObject droppedIngredient; //the dropped ingredient

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-/* a class that is used for selecting one of the options of the MCQ */
+/* a class that is used for selecting one of the options of the MCQ - it is attached to every option in the MCQScene */
 public class SelectOption : MonoBehaviour
 {
     private Button optionButton;

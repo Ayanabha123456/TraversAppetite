@@ -5,7 +5,7 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using TMPro;
 
-/* a class that is used to view the note UI in different scenes */
+/* a class that is used to view the note UI in different scenes - it is attached to the various buttons used for viewing the 'Note' UI */
 public class ViewNote : MonoBehaviour
 {
     private Button showButton;

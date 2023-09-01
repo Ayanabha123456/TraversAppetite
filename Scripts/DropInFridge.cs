@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using TMPro;
 
-/* class to drop ingredients in the fridge once stack is full */
+/* class to drop ingredients in the fridge once stack is full - it is attached to the 'Fridge' in the FridgeScene */
 public class DropInFridge : MonoBehaviour, IDropHandler
 {
     private GameObject canvasGO;

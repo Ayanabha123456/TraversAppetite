@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;
 
-/* a class that is used for interacting with the fridge to get ingredients for cooking */
+/* a class that is used for interacting with the fridge to get ingredients for cooking - it is attached to the fridge in the StartScene */
 public class FridgeInteraction : MonoBehaviour
 {
     private KeyCode key = KeyCode.A;

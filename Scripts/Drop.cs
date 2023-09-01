@@ -5,7 +5,7 @@ using UnityEngine.EventSystems;
 using UnityEngine.UI;
 using TMPro;
 
-/* class to drop ingredients in the queue cells for FIFO & BFS*/
+/* class to drop ingredients in the queue cells for FIFO & BFS - it is attached to the queue cells in the CookingScene */
 public class Drop : MonoBehaviour, IDropHandler
 {
     public Image cellImage; //'Image' component of the queue cell - useful for changing its color

@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;
 
-/* a class that is used for interacting with the stove to cook the dish */
+/* a class that is used for interacting with the stove to cook the dish - it is attached to the stove in the StartScene */
 public class StoveInteraction : MonoBehaviour
 {
     private KeyCode key = KeyCode.A;
